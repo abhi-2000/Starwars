@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+        <CheckBox
+            android:id="@+id/checkboxName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sort by Name"/>
+
+        <CheckBox
+            android:id="@+id/checkboxGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sort by Gender"/>
+
+        <!-- Add more checkboxes for additional filtering options -->
+
+        <RadioGroup
+            android:id="@+id/radioGroupSort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioSortAsc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sort Ascending"/>
+
+            <RadioButton
+                android:id="@+id/radioSortDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sort Descending"/>
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnApply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Apply"
+            android:onClick="onApplyClicked"/>
+</LinearLayout>
